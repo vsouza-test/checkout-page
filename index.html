@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href=
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"/>
+    <link rel="stylesheet" href="style.css" />
+    <title>Checkout Page</title>
+  </head>
+  <body>
+    <main class="main">
+      <h2 class="main__title">Checkout</h2>
+      <div class="main__container">
+        <div class="checkout__box">
+          <div class="checkout__list">
+            <div class="checkout__item">
+              <div class="checkout__item--image item-one"></div>
+              <div class="checkout__item--info">
+                <h3 class="checkout__item--info__title">Vintage Backbag</h3>
+                <p class="checkout__item--info__price">
+                  $54.99 <span>$94.99</span>
+                </p>
+
+                <div class="checkout__item--info__quantity">
+                  <button class="quantity__btn">-</button>
+                  <p class="quantity__number">1</p>
+                  <button class="quantity__btn">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="checkout__item">
+              <div class="checkout__item--image item-two"></div>
+              <div class="checkout__item--info">
+                <h3 class="checkout__item--info__title">Levi Shoes</h3>
+                <p class="checkout__item--info__price">
+                  $74.99 <span>$124.99</span>
+                </p>
+
+                <div class="checkout__item--info__quantity">
+                  <button class="quantity__btn">-</button>
+                  <p class="quantity__number">1</p>
+                  <button class="quantity__btn">+</button>
+                </div>
+              </div>
+            </div>
+
+            <hr class="margin" />
+            <div class="checkout__shipping">
+              <h3 class="checkout__shipping--title">Shipping</h3>
+              <p class="checkout__shipping--price">$19</p>
+            </div>
+            <hr />
+            <div class="checkout__total">
+              <h3 class="checkout__total--title">Total</h3>
+              <p class="checkout__total--price">$148.98</p>
+            </div>
+          </div>
+        </div>
+        <form class="form">
+          <h3 class="form__title">Contact infomation</h3>
+
+          <label for="email">Email
+            <input type="email" id="email" name="email" placeholder="Enter your email..." required />
+          </label>
+          <label for="phone">Phone
+            <input type="tel" id="phone" name="phone"  placeholder="Enter your phone..." required/>
+          </label>
+
+          <h3 class="form__title">Shipping address</h3>
+          <label for="name">
+            Full name
+            <input type="text" id="name" name="name" placeholder="Enter your name..." required/>
+          </label>
+
+          <label for="address">
+            Address
+            <input type="text" id="address" name="address" placeholder="Your address" required/>
+          </label>
+
+          <label for="city">
+            City
+            <input type="text" id="city" name="city" placeholder="Your city..."/>
+          </label>
+
+          <label for="country">
+            Country
+            <select name="country" id="country" aria-placeholder="Your country..." required>
+              <option value="vietnam">Vietnam</option>
+              <option value="usa">USA</option>
+              <option value="japan">Japan</option>
+              <option value="korea">Korea</option>
+            </select>
+          </label>
+
+          <label for="zip">
+            Zip code
+            <input type="text" id="zip" name="zip" placeholder="Your zip code..." required />
+          </label>
+
+          <label for="save-info">
+            <input type="checkbox" id="save-info" name="save-info" />
+            Save this infomation for next time
+          </label>
+
+          <button class="form-btn">Continue</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

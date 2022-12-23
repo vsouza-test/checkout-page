@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+:root {
+    --font: 'Montserrat', sans-serif;
+    --title-color: #4E5150;
+    --form-title-color: #4f4f4f;
+    --text-color: #333;
+    --checkout-box-background: #F2F2F2;
+    --checkout-hr-color: #dbdbdb;
+    --border-color: #828282;
+    --accent: #F2994A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    font-family: var(--font);
+    font-size: 16px;
+    color: var(--text-color);
+    margin: 2em;
+}
+
+.main__title {
+    font-size: 1.5em;
+    color: var(--title-color);
+    margin-bottom: 1em;
+}
+
+.main__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout__box {
+    background-color: var(--checkout-box-background);
+    padding: 1.5em;
+    margin-bottom: 1em;
+    border-radius: 10px;
+}
+
+.checkout__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.checkout__item {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.checkout__item--image.item-one {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background-image: url('photo1.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.checkout__item--image.item-two {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background-image: url('photo2.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.checkout__item--info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.checkout__item--info__title {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: var(--title-color);
+}
+
+.checkout__item--info__price {
+    font-size: 1em;
+    font-weight: 600;
+    color: var(--accent);
+}
+
+.checkout__item--info__price span {
+    font-size: 0.8em;
+    font-weight: 400;
+    color: var(--text-color);
+    text-decoration: line-through;
+    padding-left: 0.25em;
+}
+
+.checkout__item--info__quantity {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100px;
+    padding: 0.5em;
+    gap: 1em;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+}
+
+.quantity__btn {
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 25%;
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+    border: none;
+}
+
+hr {
+    border: 1px solid var(--checkout-hr-color);
+    margin: 0.25em 0;
+}
+
+.margin {
+    margin-top: 4em;
+}
+
+.checkout__shipping,
+.checkout__total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.9em;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__title {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: var(--form-title-color);
+    margin-bottom: 0.5em;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: var(--form-title-color);
+    font-size: 0.9em;
+}
+
+.form input,
+.form select {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+.form input[type="checkbox"] {
+    width: auto;
+}
+
+.form-btn {
+    padding: 0.75em 2em;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--accent);
+    color: #fff;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+@media screen and (min-width: 900px) {
+
+    .main {
+        margin: 2em 5em;
+    }
+
+    .main__container {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .main__title {
+        font-size: 2em;
+        text-align: center;
+        margin-bottom: 2em;
+    }
+
+    .margin {
+        margin-top: 15em;
+    }
+
+    .form {
+        width: 30%;
+        order: -1;
+        gap: 0.5;
+    }
+
+    .form__title {
+        font-size: 1.5em;
+        margin-bottom: 1em;
+    }
+}
